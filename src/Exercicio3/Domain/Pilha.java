@@ -35,21 +35,28 @@ public class Pilha {
 
     public void Pop() {
 
-        this.PilhaLivros[ItensPilha] = null;
+        if (this.ItensPilha == 0) {
+
+            System.out.println("Pilha Vazia Favor Inserir Dados");
+            return;
+
+        }
+
+        this.PilhaLivros[ItensPilha - 1] = null;
         this.ItensPilha--;
 
     }
 
-    public Livro Peek() {
+    public void Peek() {
 
         if (this.ItensPilha == 0) {
 
             System.out.println("Pilha Vazia Favor Inserir Dados");
-            return null;
+            return;
 
         }
 
-        return this.PilhaLivros[ItensPilha];
+         System.out.println( this.PilhaLivros[ItensPilha - 1].ShowLivro());
 
     }
 
@@ -67,7 +74,7 @@ public class Pilha {
 
         for (int i = ItensPilha; i > 0; i--) {
 
-            String str = PilhaLivros[i - 1].toString();
+            String str = PilhaLivros[i - 1].ShowLivro();
 
             Livros = Livros.concat(str);
 
