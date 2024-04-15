@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Livro {
 
-    private  final Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
 
     private String codigo;
 
@@ -19,19 +19,31 @@ public class Livro {
 
     private String ISBN;
 
-    
+    private String AutoresCerto() {
+
+        String autores = " ";
+
+        for (int i = 0; i < Autores.length; i++) {
+
+            autores.concat(String.format(autores, Autores));
+
+        }
+
+        return "fsdfsd";
+
+    }
 
     public Livro() {
     }
 
     public String ShowLivro() {
 
-       var Text =  String.format("\nCodigo: %s Ano: %d ISBN: %s Titulo: %s Autores: %s",
+        var Text = String.format("\nCodigo: %s Ano: %d ISBN: %s Titulo: %s Autores: %s",
                 this.codigo,
                 this.Ano,
                 this.ISBN,
                 this.Titulo,
-                Arrays.toString(Autores));
+                Arrays.toString(Autores).replaceAll("", ISBN));
 
         return Text;
     }
@@ -44,7 +56,7 @@ public class Livro {
         ISBN = iSBN;
     }
 
-    public  Livro CriarLivro(){
+    public Livro CriarLivro() {
 
         System.out.println("Informe o Nome do livro: ");
         var nome = scanner.nextLine();
@@ -63,7 +75,6 @@ public class Livro {
         SetarAutores();
 
         return new Livro(codigo, nome, Autores, ano, ISBN);
-
 
     }
 
@@ -107,16 +118,16 @@ public class Livro {
         ISBN = iSBN;
     }
 
-    private  void SetarAutores(){
+    private void SetarAutores() {
 
         int position = 0;
-        int option;   
-        
-            do{
+        int option;
+
+        do {
 
             System.out.println("Informe o nome do Autor: ");
             this.Autores[position] = scanner.nextLine();
-         
+
             System.out.printf("Deseja inserir mais um autor: (1) Sim (0) Nao");
             option = scanner.nextInt();
 
@@ -124,8 +135,7 @@ public class Livro {
 
             position++;
 
-        }while(option != 0);
-
+        } while (option != 0);
 
     }
 
