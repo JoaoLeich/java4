@@ -25,17 +25,16 @@ public class Dia {
         Compromisso compromissoRet = new Compromisso();
 
         for (Compromisso compromisso : compromissos) {
-            
-            if(compromisso.getHora() == hora){
+
+            if (compromisso.getHora() == hora) {
 
                 compromissoRet = compromisso;
 
-            }
-            else{
+            } else {
 
                 System.out.println("Compromisso Not Found");
-                
-                throw new Exception("Not found")
+
+                // throw new Exception("Not found")
 
             }
 
@@ -48,17 +47,16 @@ public class Dia {
     public void ExcluirCompromisso(int hora) {
 
         for (Compromisso compromisso : compromissos) {
-            
-            if(compromisso.getHora() == hora){
 
-                 compromisso = null;
+            if (compromisso.getHora() == hora) {
 
-            }
-            else{
+                compromisso = null;
+
+            } else {
 
                 System.out.println("Compromisso Not Found");
-                
-                throw new Exception("Not found")
+
+                // throw new Exception("Not found")
 
             }
 
