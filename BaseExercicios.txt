@@ -1,0 +1,103 @@
+											Exercicio 4
+
+Classes:
+
+	Veiculos -> Modelo,placa,cor
+
+	Estacionamento -> int(Vagas) limit 10 
+
+	Periodos (Manha,Tarde,Noite)
+
+Metodos:
+
+	Retirada -> buscar veiculo pela placa
+
+	Relatorio veiculos entrada saida 
+
+	Valor total periodo -> 5 conto
+
+Regras:
+	
+	A cada veiculo inserido ou retirado somar quantidade equivalente com variavel que guarde tal valor
+	Por periodo o mesmo acontece pelo valor total arrecadado
+	
+	--------------------------------------------------------------------------------------------------------
+	
+										    Exercicio 5
+										  
+Classes:
+
+Reserva:
+
+	Meio de Campo entre Evento e Cliente
+
+Evento:
+	nome, - String
+	data, - String
+	local, - String
+	lotação máxima do evento, - int
+	quantidade de ingressos - int
+	vendidos - int
+	preço do ingresso - double
+	Double - Valor Total Reserva
+	?Data - String
+
+Cliente:
+	Nome Responsavel - String
+	Quantiade Pessoas - int
+	Data - String
+	
+Metodos:
+
+	Incluir Evento
+	
+	Alterar Evento
+	
+	Listar Eventos
+	
+	Exclusao Eventos e Reservas
+	
+		--------------------------------------------------------------------------------------------------------
+	
+										    Exercicio 6
+
+Classes:
+
+Pessoas:
+	Nome, - String
+	Rg - String
+	Tipo( Passageiro / Tripulacao) - String
+		Caso Passageiro: 
+			Possue Identificador Bagagem - String
+			Sua Passagem ?
+
+Passagem:
+	Numero do acento - int
+	Classe do acento - String
+	Data Voo(Dia,Mes,Ano,Hora,Minuto) - DateAndTime
+
+Tripulacao:
+	Matricula - String
+	Identificacao Aeronautica - String
+
+Comandantes:
+	Total Horas Voo - double
+
+Comissarios:
+	Idiomas - String
+
+Aeronave:
+	Codigo - String
+	tipo?
+	Quantiade Assentos - int
+	
+Metodos:
+	Controle de trafego:
+	
+		Listar Tripuantes conforme aviao 
+
+		Pegar informacoes conforme as classes
+
+		Adicionar Pessoas a Aeronave 
+		
+		Listar Avioes em voo		

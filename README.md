@@ -4,4 +4,4 @@ Realizar Metade da Lista Quatro Até Domingo que vem
 
 > Metade Samuel Metade Joao Pedro
 
-- `Pilha.java`: Necessario Ajustes Menu Verificar Erros nulo
+- `BaseExercicios.java`: Texto contendo bases de classes e metodos para resoluacao dos casos
